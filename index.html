@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo da Memória - Copa do Mundo de Clubes</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Memória - Copa do Mundo de Clubes</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Jogo da Memória - Mundial de Clubes FIFA 2025 🏆</h1>
-    <p>Desafie sua memória com os escudos dos 32 times participantes!</p>
-    <button onclick="startGame()">Iniciar Jogo</button>
+  <div id="home" class="pagina">
+    <h1>Jogo da Memória - Mundial de Clubes 🏆</h1>
+    <button onclick="iniciarJogo()">Começar o Jogo</button>
+  </div>
 
-    <script>
-        function startGame() {
-            window.location.href = 'game.html';
-        }
-    </script>
+  <div id="jogo" class="pagina oculto">
+    <h2>Encontre os pares!</h2>
+    <div id="status">
+      <span id="tempo">Tempo: 0s</span> |
+      <span id="tentativas">Tentativas: 0</span>
+    </div>
+    <div id="gameBoard"></div>
+  </div>
 
+  <div id="vitoria" class="vitoria">Parabéns! Você venceu! 🎉</div>
+
+  <script src="script.js"></script>
 </body>
 </html>
