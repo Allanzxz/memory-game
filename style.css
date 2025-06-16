@@ -1,12 +1,12 @@
+/* Fonte estilizada */
 body {
     font-family: 'Arial Black', cursive, sans-serif;
-    background-image: url('images/fundo.webp');
+    background: url('images/fundo.webp');
     background-size: cover;
-    background-position: center;
     text-align: center;
     margin: 0;
     padding: 0;
-    color: #fff;
+    color: #d30707;
 }
   button {
     padding: 10px 20px;
@@ -26,7 +26,8 @@ body {
   .carta {
     width: 80px;
     height: 80px;
-    background-color: #ddd;
+    background: url('images/carta-verso.png');
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
